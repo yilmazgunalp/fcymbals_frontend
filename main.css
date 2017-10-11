@@ -9,10 +9,14 @@ height: 100%;
 font-family: "Lucida Sans", sans-serif; 
 }
 
-
+div,footer {
+box-sizing: border-box;	
+}
 
 ul {
 list-style: none;	
+padding: 0;
+margin: 0;
 }
 
 ul li {
@@ -46,16 +50,31 @@ input[type="search"]::-webkit-search-cancel-button {display: none; }
 
 /* CLEARFIX */
 
-#search-form:after {
+#wrapper:after {
 content: "";
 display: block;	
 clear: both;	
 }
 
+/* WRAPPER */
+
+#wrapper {
+min-height: 87%;
+
+}
+
+/* STRIPES */
+
+.stripe {
+	display: none;
+	background: #dcdcda;
+	
+}
+
 /* CONTAINER */
 
 #container {
-padding: 15% 20% 0 20%;
+padding: 15% 6% 0 6%;
 
 }
 
@@ -86,22 +105,60 @@ input[type="submit"]{
 /* FOOTER */
 
 footer {
+	min-height: 13%;
+	padding: 8px 8px 0 8px;
+	font-size: 10px;
+	font-weight: 100;
+}
+
+footer ul {
 	position: absolute;
 	right: 0;
 	bottom: 0;
-	padding: 25px;
+	padding: 12px;
+}
+
+/* MEDIA QUERIES */
+
+
+
+
+@media only screen and (min-width: 992px) {
+
+#wrapper {
+margin: 0 auto;	
+max-width: 992px;
+
+
+}	
+	
+.stripe,#container {
+display: inline-block;
+vertical-align: top;
+height: 86vh;
+}	
+	
+#left-stripe {
+float: left;	
+}	
+
+#container {
+width: 492px;
+padding: 25vh 5px;	
+}	
+
+.stripe {
+width: 250px;
+padding: 16px;
+background-clip: content-box;
+border: 1px dashed black;
 }
 
 
 
-/* MEDIA QUERIES */
+footer {
 
-@media only screen and (min-width: 992px) {
-
-#container {
-
-
-}	
+}
 
 input[type="search"] {
 width: 380px;
@@ -124,7 +181,7 @@ width: 220px;
 @media only screen and (min-width: 600px) and (max-width: 992px) {
 	
 input[type="search"] {
-width: 280px;
+width: 300px;
 }			
 	
 #container {
@@ -132,10 +189,53 @@ width: 280px;
 }	
 }
 
+@media only screen and (min-width: 680px) {
+	
+footer {
+font-size: initial;
+padding: 15px;	
+}	
+
+}
+
+
+@media only screen and (max-height: 400px) and (min-width: 992px) {
+	
+html,body {
+min-height: 400px;
+}	
+	
+#wrapper,.stripe, #container {
+min-height: 300px;
+}
+
+#container {
+width: 479px;	
+}
+
+footer {
+min-height: 60px;	
+}
+ 
+
+}	
 	
 	
+@media only screen and (min-width: 1200px) {
+
+#wrapper {
+max-width: 96%;
+padding: 0 2%;
+}	
 	
+.stripe {
+width: 29%;	
+}	
+#container {
+width: 42%;	
+}
 	
+}	
 	
 	
 	
