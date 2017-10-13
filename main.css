@@ -1,84 +1,10 @@
-/* RESETS */
-
-html {
-height: 100%;
-}
-body  {
-margin: 0;
-height: 100%;
-font-family: "Lucida Sans", sans-serif; 
-}
-
-div,footer {
-box-sizing: border-box;	
-}
-
-ul {
-list-style: none;	
-padding: 0;
-margin: 0;
-}
-
-ul li {
-display: inline-block;	
-}
-
-a {
-text-decoration: none;
-color:inherit;	
-
-
-}
-
-input {
-outline: none;	
-border:none;
-background: none;
--webkit-appearance:none;
-font-family: inherit;
-padding: 10px;
-}
-
-:focus {
-border: 1px solid #928D7B;	
-}
-
-input[type="search"]::-webkit-search-cancel-button {display: none; }
-
-
-/* FONTS */
-
-/* CLEARFIX */
-
-#wrapper:after {
-content: "";
-display: block;	
-clear: both;	
-}
-
-/* WRAPPER */
-
-#wrapper {
-min-height: 87%;
-
-}
-
-/* STRIPES */
-
-.stripe {
-	display: none;
-	background: #dcdcda;
 	
-}
+		/***** FONTS *****/
+	/***************************/
 
-/* CONTAINER */
 
-#container {
-padding: 15% 6% 0 6%;
-
-}
-
-/* FORM */
+		/***** FORM *****/
+	/***************************/
 #s-box {
 text-align: center;
 }
@@ -102,8 +28,9 @@ border-color: #928D7B;
 input[type="submit"]{
 }
 
-/* FOOTER */
-
+		/***** FOOTER *****/
+	/***************************/
+	
 footer {
 	position: relative;
 	min-height: 13%;
@@ -119,7 +46,8 @@ footer ul {
 	padding: 12px;
 }
 
-/* SVG */
+		/***** SVG *******/
+	/***************************/
 
 #logo {
 margin-bottom: 60px;
@@ -159,47 +87,12 @@ fill: red;
 letter-spacing: initial;
 }
 
-/* MEDIA QUERIES */
-
-
+	/*****************************/
+	/****** MEDIA QUERIES *******/
+	/***************************/
 
 
 @media only screen and (min-width: 992px) {
-
-#wrapper {
-margin: 0 auto;	
-max-width: 992px;
-
-
-}	
-	
-.stripe,#container {
-display: inline-block;
-vertical-align: top;
-height: 86vh;
-}	
-	
-#left-stripe {
-float: left;	
-}	
-
-#container {
-width: 492px;
-padding: 25vh 5px;	
-}	
-
-.stripe {
-width: 250px;
-padding: 8vh 16px 16px;
-background-clip: content-box;
-border: 1px dashed black;
-}
-
-
-
-footer {
-
-}
 
 input[type="search"] {
 width: 380px;
@@ -212,23 +105,16 @@ width: 380px;
 input[type="search"] {
 width: 220px;
 }			
-	
-#container {
 
-}	
 }
 	
 	
 @media only screen and (min-width: 600px) and (max-width: 992px) {
 
-
 input[type="search"] {
 width: 300px;
 }			
-	
-#container {
 
-}	
 }
 
 @media only screen and (min-width: 680px) {
@@ -240,45 +126,6 @@ padding: 15px;
 
 }
 
-
-@media only screen and (max-height: 400px) and (min-width: 992px) {
-	
-html,body {
-min-height: 400px;
-}	
-	
-#wrapper,.stripe, #container {
-min-height: 300px;
-}
-
-#container {
-width: 479px;	
-}
-
-footer {
-min-height: 60px;	
-}
- 
-
-}	
-	
-	
-@media only screen and (min-width: 1200px) {
-
-#wrapper {
-max-width: 96%;
-padding: 0 2%;
-}	
-	
-.stripe {
-width: 29%;	
-}	
-#container {
-width: 42%;	
-}
-	
-}	
-	
 	
 @media only screen and (max-width: 992px) {	
 	

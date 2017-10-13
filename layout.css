@@ -1,0 +1,126 @@
+
+/* CLEARFIX */
+
+#wrapper:after {
+content: "";
+display: block;	
+clear: both;	
+}
+
+/* WRAPPER */
+
+#wrapper {
+height: 1px;	
+min-height: 87%;
+
+}
+
+/* STRIPES */
+
+.stripe {
+	display: none;
+	background: #dcdcda;
+	
+}
+
+/* CONTAINER */
+
+#container {
+padding: 15% 6% 0 6%;
+background: #ffffc1;
+height: 100%;
+
+
+}
+
+/* FOOTER */
+footer {
+background: #99993d;
+min-height: 13%;	
+}
+ 
+
+
+/*****************************/
+/****** MEDIA QUERIES *******/
+/***************************/
+
+@media only screen and (min-width: 992px) {
+
+#wrapper {
+margin: 0 auto;	
+max-width: 992px;
+}	
+	
+.stripe,#container {
+display: inline-block;
+vertical-align: top;
+height: 87vh;
+}	
+	
+#left-stripe {
+float: left;	
+}	
+
+#container {
+width: 492px;
+padding: 25vh 5px;	
+}	
+
+.stripe {
+width: 250px;
+padding: 8vh 16px 16px;
+/* background-clip: content-box; */
+border: 1px dashed black;
+}
+
+}	
+
+
+@media only screen and (max-height: 400px) and (min-width: 992px) {
+	
+html,body {
+min-height: 400px;
+}	
+	
+#wrapper,.stripe, #container {
+min-height: 300px;
+}
+
+#container {
+width: 479px;	
+}
+
+footer {
+min-height: 60px;	
+}
+ 
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+#wrapper {
+max-width: 96%;
+padding: 0 2%;
+}	
+	
+.stripe {
+width: 29%;	
+}	
+#container {
+width: 42%;	
+}
+}
+	
+
+
+
+
+
+
+
+
+
+
+
