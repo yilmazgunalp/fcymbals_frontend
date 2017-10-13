@@ -1,3 +1,14 @@
+/*** VISUAL**/
+/* This is for inspecting layout visually. Delete in development/production */
+
+body {
+background: #8cc8c7;	
+}
+#wrapper>*, footer {
+background: #ffffc1;
+background-clip: content-box;
+border: 1px dashed black;
+}
 
 /* CLEARFIX */
 
@@ -7,39 +18,34 @@ display: block;
 clear: both;	
 }
 
+
 /* WRAPPER */
 
 #wrapper {
 height: 1px;	
 min-height: 87%;
-
+background: #af8792;
 }
 
 /* STRIPES */
 
 .stripe {
 	display: none;
-	background: #dcdcda;
-	
 }
 
 /* CONTAINER */
 
 #container {
-padding: 15% 6% 0 6%;
-background: #ffffc1;
+padding: 5% 3%;
 height: 100%;
-
-
 }
 
 /* FOOTER */
 footer {
-background: #99993d;
-min-height: 13%;	
+min-height: 13%;
+padding: 6px;	
 }
  
-
 
 /*****************************/
 /****** MEDIA QUERIES *******/
@@ -64,14 +70,12 @@ float: left;
 
 #container {
 width: 492px;
-padding: 25vh 5px;	
+padding: 8vh 16px 16px;	
 }	
 
 .stripe {
 width: 250px;
 padding: 8vh 16px 16px;
-/* background-clip: content-box; */
-border: 1px dashed black;
 }
 
 }	
@@ -96,7 +100,6 @@ min-height: 60px;
 }
  
 }
-
 
 @media only screen and (min-width: 1200px) {
 
