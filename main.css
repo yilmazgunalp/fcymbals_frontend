@@ -1,7 +1,60 @@
 	
 		/***** FONTS *****/
 	/***************************/
+	
+body  {
+font-family: "Lucida Sans", sans-serif; 
+font-size: 13px;
+}	
 
+	
+		/***** SVG *******/
+	/***************************/
+
+#logo {
+margin-bottom: 10px;
+height: 100px;
+text-align: center;
+}
+
+#svg{
+width: 100%;
+height: 100%;
+
+}
+
+rect {
+display: block;	
+width: 100%;
+height: 100%;
+fill: transparent;	
+}
+image {
+height: 28px;
+width: 28px;
+y: 25%;
+x: 16;	
+}
+
+text {
+letter-spacing: 0.02em;	
+word-spacing: 0.4em;
+font-size: 2.4em;
+}
+
+tspan {
+letter-spacing: 0.16em;
+fill:#cccc51;
+font-size: 1.55em;
+vertical-align: middle;
+font-family: Verdana;	
+}
+
+tspan:last-child {
+fill: red;	
+letter-spacing: initial;
+}
+	
 
 		/***** FORM *****/
 	/***************************/
@@ -46,47 +99,7 @@ footer ul {
 	padding: 12px;
 }
 
-		/***** SVG *******/
-	/***************************/
-
-#logo {
-margin-bottom: 60px;
-height: 150px;
-text-align: center;
-}
-
-#svg{
-width: 100%;
-height: 100%;
-
-}
-
-rect {
-display: block;	
-width: 100%;
-height: 100%;
-fill: transparent;	
-}
-
-text {
-letter-spacing: 0.06em;	
-word-spacing: 0.4em;
-
-}
-
-tspan {
-letter-spacing: 0.2em;
-fill:#cccc51;
-font-size: 1.55em;
-vertical-align: middle;
-font-family: Verdana;	
-}
-
-tspan:last-child {
-fill: red;	
-letter-spacing: initial;
-}
-
+		
 	/*****************************/
 	/****** MEDIA QUERIES *******/
 	/***************************/

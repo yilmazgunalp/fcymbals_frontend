@@ -1,14 +1,14 @@
 /*** VISUAL**/
 /* This is for inspecting layout visually. Delete in development/production */
 
-body {
+/* body {
 background: #8cc8c7;	
 }
 #wrapper>*, footer {
 background: #ffffc1;
 background-clip: content-box;
 border: 1px dashed black;
-}
+} */
 
 /* CLEARFIX */
 
@@ -24,7 +24,6 @@ clear: both;
 #wrapper {
 height: 1px;	
 min-height: 87%;
-background: #af8792;
 }
 
 /* STRIPES */
@@ -66,6 +65,10 @@ height: 87vh;
 	
 #left-stripe {
 float: left;	
+}
+
+#right-stripe {
+float: right;	
 }	
 
 #container {
@@ -107,14 +110,19 @@ min-height: 60px;
 max-width: 96%;
 padding: 0 2%;
 }	
-	
+
 .stripe {
 width: 29%;	
+
 }	
+
 #container {
-width: 42%;	
+width: 42%;
 }
-}
+
+
+
+}	
 	
 
 
