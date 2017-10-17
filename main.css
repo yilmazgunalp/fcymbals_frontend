@@ -15,12 +15,13 @@ font-size: 13px;
 margin-bottom: 10px;
 height: 100px;
 text-align: center;
+background: url("sabian.jpg") no-repeat 16px 34%;
+background-size: auto 29%;
 }
 
 #svg{
 width: 100%;
 height: 100%;
-
 }
 
 rect {
@@ -29,12 +30,12 @@ width: 100%;
 height: 100%;
 fill: transparent;	
 }
-image {
+/* image {
 height: 28px;
 width: 28px;
 y: 25%;
 x: 16;	
-}
+} */
 
 text {
 letter-spacing: 0.02em;	
