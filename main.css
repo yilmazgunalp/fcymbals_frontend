@@ -59,6 +59,8 @@ letter-spacing: initial;
 
 		/***** FORM *****/
 	/***************************/
+	
+
 #s-box {
 text-align: center;
 }
@@ -70,7 +72,9 @@ text-align: center;
 input[type="search"] {
 border: 1px solid #F4ECCD;
 height: 36px;
-border-radius: 3px;	
+border-radius: 3px;
+width: 70%;
+	
 }
 
 
@@ -80,6 +84,7 @@ border-color: #928D7B;
 }
 
 input[type="submit"]{
+clear: right;	
 }
 
 		/***** FOOTER *****/
