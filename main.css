@@ -13,78 +13,66 @@ font-size: 13px;
 
 #logo {
 margin-bottom: 10px;
-height: 100px;
-text-align: center;
-background: url("sabian.jpg") no-repeat 16px 34%;
-background-size: auto 29%;
+height: 8em;
+
+
 }
 
-#svg{
-width: 100%;
+svg{
+max-width: 55%;
 height: 100%;
+min-width: 280px;	
 }
-
-rect {
-display: block;	
-width: 100%;
-height: 100%;
-fill: transparent;	
-}
-/* image {
-height: 28px;
-width: 28px;
-y: 25%;
-x: 16;	
-} */
 
 text {
 letter-spacing: 0.02em;	
 word-spacing: 0.4em;
-font-size: 2.4em;
+font-size: 2em;
 }
 
 tspan {
 letter-spacing: 0.16em;
-fill:#cccc51;
+fill: red;
 font-size: 1.55em;
 vertical-align: middle;
 font-family: Verdana;	
 }
 
 tspan:last-child {
-fill: red;	
 letter-spacing: initial;
 }
 	
 
 		/***** FORM *****/
 	/***************************/
+#search-form {
+font-size: 1.2em;	
+}
 	
-
 #s-box {
 text-align: center;
-}
-
-#search-form {
-	
 }
 
 input[type="search"] {
 border: 1px solid #F4ECCD;
 height: 36px;
 border-radius: 3px;
-width: 70%;
-	
+width: 80%;
+max-width: 400px;
+font-size: inherit;
+color: #4c3c08;
+font-weight: lighter;
 }
 
 
 input[type="search"]:hover {
 border-color: #928D7B;
-
 }
 
 input[type="submit"]{
-clear: right;	
+font-size: inherit;
+font-weight: bold;
+letter-spacing: 0.1em;	
 }
 
 		/***** FOOTER *****/
@@ -94,8 +82,6 @@ footer {
 	position: relative;
 	min-height: 13%;
 	padding: 8px 8px 0 8px;
-	font-size: 10px;
-	font-weight: 100;
 }
 
 footer ul {
@@ -112,30 +98,24 @@ footer ul {
 
 
 @media only screen and (min-width: 992px) {
-
-input[type="search"] {
-width: 380px;
-}	
-}	
-
-
-@media only screen and (min-width: 480px) and (max-width: 600px) {
-	
-input[type="search"] {
-width: 220px;
-}			
-
+#logo {
+text-align: center;	
 }
-	
-	
-@media only screen and (min-width: 600px) and (max-width: 992px) {
-
-input[type="search"] {
-width: 300px;
-}			
-
+svg {
+max-width: 500px;	
 }
+}	
 
+
+	
+@media only screen and (max-height: 400px) and (min-width: 992px) {
+	
+
+
+	
+}	
+
+/***** CONTENT BREAKPOINT *****/
 @media only screen and (min-width: 680px) {
 	
 footer {
@@ -145,13 +125,26 @@ padding: 15px;
 
 }
 
+/***** ------------------- *****/
 	
 @media only screen and (max-width: 992px) {	
-	
-body {
-font-size: 12px;	
-}		
+
 	
 }	
+	
+	
+@media only screen and (min-width: 1200px) {
+
+
+
+}		
+	
+@media only screen and (min-width: 1400px) {
+
+
+}	
+	
+	
+	
 	
 	
