@@ -1,14 +1,14 @@
 /*** VISUAL**/
 /* This is for inspecting layout visually. Delete in development/production */
 
-/* body {
+body {
 background: #8cc8c7;	
 }
 #wrapper>*, footer {
 background: #ffffc1;
 background-clip: content-box;
 border: 1px dashed black;
-} */
+}
 
 /* CLEARFIX */
 
@@ -22,7 +22,7 @@ clear: both;
 /* WRAPPER */
 
 #wrapper {
-height: 1px;	
+/* height: 1px;	 */
 min-height: 87%;
 }
 
@@ -36,17 +36,24 @@ min-height: 87%;
 
 #container {
 padding: 5% 3%;
-height: 100%;
+/* height: 100%; */
 }
 
 /* FOOTER */
 footer {
-min-height: 13%;
 padding: 6px;	
+position: relative;
+bottom: 0;
 }
  
+ footer ul {
+text-align: right; 
+ }
 
-/*****************************/
+ 
+ 
+ 
+ /*****************************/
 /****** MEDIA QUERIES *******/
 /***************************/
 
@@ -60,7 +67,7 @@ max-width: 992px;
 .stripe,#container {
 display: inline-block;
 vertical-align: top;
-height: 87vh;
+/* height: 87vh; */
 }	
 	
 #left-stripe {
@@ -72,7 +79,7 @@ float: right;
 }	
 
 #container {
-width: 492px;
+width: 475px;
 padding: 8vh 16px 16px;	
 }	
 
