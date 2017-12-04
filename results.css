@@ -7,6 +7,9 @@ font-family: "Lucida Sans", sans-serif;
 font-size: 13px;
 }	
 
+html,body,#wrapper {
+/* height: 100%;	  */
+}	
 
 /* CLEARFIX */
 
@@ -27,7 +30,7 @@ height: 8em;
 svg{
 max-width: 55%;
 height: 100%;
-min-width: 280px;	
+min-width: 268px;	
 }
 
 text {
@@ -53,9 +56,9 @@ letter-spacing: initial;
 		/***** RESULTS *******/
 	  /************************/
 
-#results {
+/* #results {
 background: #EB9984;	
-}	  
+}	 */  
 .result {
 
 background: #EEE6E4;
@@ -99,7 +102,10 @@ padding-top: 2em;
 		/***** FOOTER *****/
 	/***************************/
 	
-
+footer {
+position: initial;
+	
+}
 
 
 		
@@ -107,7 +113,15 @@ padding-top: 2em;
 	/****** MEDIA QUERIES *******/
 	/***************************/
 
+@media only screen and (min-width: 448px) {
+.result {
+max-width: 420px;
+margin: 15px auto;
+}
 
+}	
+	
+	
 @media only screen and (min-width: 992px) {
 #logo {
 text-align: center;	
